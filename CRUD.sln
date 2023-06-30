@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consola", "Consola\Consola.csproj", "{BBCBD991-CF2E-4414-847E-7B49ABE077E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{83C2EB16-CFD1-41C5-B322-A2121FFDB0FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaz", "Interfaz\Interfaz.csproj", "{54C22EB1-5DE7-4322-B20C-C5523B41253D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBCBD991-CF2E-4414-847E-7B49ABE077E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCBD991-CF2E-4414-847E-7B49ABE077E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCBD991-CF2E-4414-847E-7B49ABE077E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCBD991-CF2E-4414-847E-7B49ABE077E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C2EB16-CFD1-41C5-B322-A2121FFDB0FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C2EB16-CFD1-41C5-B322-A2121FFDB0FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C2EB16-CFD1-41C5-B322-A2121FFDB0FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C2EB16-CFD1-41C5-B322-A2121FFDB0FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C22EB1-5DE7-4322-B20C-C5523B41253D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C22EB1-5DE7-4322-B20C-C5523B41253D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C22EB1-5DE7-4322-B20C-C5523B41253D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C22EB1-5DE7-4322-B20C-C5523B41253D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {111C4565-AC4F-424E-8590-6B806B0CF5C2}
+	EndGlobalSection
+EndGlobal
