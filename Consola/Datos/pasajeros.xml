@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPasajero xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pasajero>
+    <Nombre>Qwerty</Nombre>
+    <Apellido>Jackson</Apellido>
+    <Dni>12345678</Dni>
+  </Pasajero>
+  <Pasajero>
+    <Nombre>Jhoe</Nombre>
+    <Apellido>Robinson</Apellido>
+    <Dni>84678548</Dni>
+  </Pasajero>
+</ArrayOfPasajero>
