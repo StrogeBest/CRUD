@@ -10,4 +10,14 @@
     <Apellido>Robinson</Apellido>
     <Dni>84678548</Dni>
   </Pasajero>
+  <Pasajero>
+    <Nombre>Mark</Nombre>
+    <Apellido>Mayer</Apellido>
+    <Dni>84678548</Dni>
+  </Pasajero>
+  <Pasajero>
+    <Nombre>Peter</Nombre>
+    <Apellido>Parker</Apellido>
+    <Dni>87621648</Dni>
+  </Pasajero>
 </ArrayOfPasajero>
