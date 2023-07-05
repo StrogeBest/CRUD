@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Consola\\Consola.csproj": {}
+    "C:\\Users\\Leandro\\Desktop\\CRUD\\Consola\\Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Consola\\Consola.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\CRUD\\Consola\\Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Consola\\Consola.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\CRUD\\Consola\\Consola.csproj",
         "projectName": "Consola",
-        "projectPath": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Consola\\Consola.csproj",
-        "packagesPath": "C:\\Users\\Javier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Consola\\obj\\",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\CRUD\\Consola\\Consola.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\CRUD\\Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Entidades\\Entidades.csproj"
+              "C:\\Users\\Leandro\\Desktop\\CRUD\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Leandro\\Desktop\\CRUD\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -59,21 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\Leandro\\Desktop\\CRUD\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Leandro\\Desktop\\CRUD\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\Javier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javier\\Desktop\\ejercicios\\CRUD\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\Leandro\\Desktop\\CRUD\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Leandro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Leandro\\Desktop\\CRUD\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Leandro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -114,7 +114,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

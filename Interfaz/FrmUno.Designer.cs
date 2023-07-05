@@ -28,37 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            lblTitulo = new Label();
+            dgvLista = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvLista).BeginInit();
+            SuspendLayout();
             // 
             // lblTitulo
             // 
-            this.lblTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitulo.ForeColor = System.Drawing.Color.Black;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(721, 507);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Formulario Uno";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblTitulo.Dock = DockStyle.Top;
+            lblTitulo.Font = new Font("Segoe UI", 32F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTitulo.ForeColor = Color.Black;
+            lblTitulo.Location = new Point(0, 0);
+            lblTitulo.Name = "lblTitulo";
+            lblTitulo.Size = new Size(721, 80);
+            lblTitulo.TabIndex = 0;
+            lblTitulo.Text = "Formulario Uno: DataGridView";
+            lblTitulo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // dgvLista
+            // 
+            dgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLista.Location = new Point(47, 96);
+            dgvLista.Name = "dgvLista";
+            dgvLista.RowTemplate.Height = 25;
+            dgvLista.Size = new Size(622, 362);
+            dgvLista.TabIndex = 1;
             // 
             // FrmUno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(721, 507);
-            this.Controls.Add(this.lblTitulo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmUno";
-            this.Text = "FrmUno";
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(224, 224, 224);
+            ClientSize = new Size(721, 507);
+            Controls.Add(dgvLista);
+            Controls.Add(lblTitulo);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FrmUno";
+            Text = "FrmUno";
+            ((System.ComponentModel.ISupportInitialize)dgvLista).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private Label lblTitulo;
+        private DataGridView dgvLista;
     }
 }

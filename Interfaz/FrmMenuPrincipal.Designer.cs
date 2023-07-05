@@ -28,92 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.btnTres = new System.Windows.Forms.Button();
-            this.btnDos = new System.Windows.Forms.Button();
-            this.btnUno = new System.Windows.Forms.Button();
-            this.panelMenu.SuspendLayout();
-            this.SuspendLayout();
+            panelMenu = new Panel();
+            btnTres = new Button();
+            btnDos = new Button();
+            btnUno = new Button();
+            panelContenedor = new Panel();
+            panelMenu.SuspendLayout();
+            SuspendLayout();
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.White;
-            this.panelMenu.Controls.Add(this.btnTres);
-            this.panelMenu.Controls.Add(this.btnDos);
-            this.panelMenu.Controls.Add(this.btnUno);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 507);
-            this.panelMenu.TabIndex = 0;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(200, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(721, 507);
-            this.panelContenedor.TabIndex = 1;
+            panelMenu.BackColor = Color.White;
+            panelMenu.Controls.Add(btnTres);
+            panelMenu.Controls.Add(btnDos);
+            panelMenu.Controls.Add(btnUno);
+            panelMenu.Dock = DockStyle.Left;
+            panelMenu.Location = new Point(0, 0);
+            panelMenu.Name = "panelMenu";
+            panelMenu.Size = new Size(200, 507);
+            panelMenu.TabIndex = 0;
             // 
             // btnTres
             // 
-            this.btnTres.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnTres.FlatAppearance.BorderSize = 0;
-            this.btnTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTres.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTres.ForeColor = System.Drawing.Color.White;
-            this.btnTres.Location = new System.Drawing.Point(0, 311);
-            this.btnTres.Name = "btnTres";
-            this.btnTres.Size = new System.Drawing.Size(200, 50);
-            this.btnTres.TabIndex = 2;
-            this.btnTres.Text = "Tres";
-            this.btnTres.UseVisualStyleBackColor = false;
+            btnTres.BackColor = Color.FromArgb(128, 128, 255);
+            btnTres.Cursor = Cursors.Hand;
+            btnTres.FlatAppearance.BorderSize = 0;
+            btnTres.FlatStyle = FlatStyle.Flat;
+            btnTres.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnTres.ForeColor = Color.White;
+            btnTres.Location = new Point(0, 311);
+            btnTres.Name = "btnTres";
+            btnTres.Size = new Size(200, 50);
+            btnTres.TabIndex = 2;
+            btnTres.Text = "Tres";
+            btnTres.UseVisualStyleBackColor = false;
+            btnTres.Click += btnTres_Click;
             // 
             // btnDos
             // 
-            this.btnDos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnDos.FlatAppearance.BorderSize = 0;
-            this.btnDos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDos.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDos.ForeColor = System.Drawing.Color.White;
-            this.btnDos.Location = new System.Drawing.Point(0, 240);
-            this.btnDos.Name = "btnDos";
-            this.btnDos.Size = new System.Drawing.Size(200, 50);
-            this.btnDos.TabIndex = 1;
-            this.btnDos.Text = "Dos";
-            this.btnDos.UseVisualStyleBackColor = false;
+            btnDos.BackColor = Color.FromArgb(128, 128, 255);
+            btnDos.Cursor = Cursors.Hand;
+            btnDos.FlatAppearance.BorderSize = 0;
+            btnDos.FlatStyle = FlatStyle.Flat;
+            btnDos.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDos.ForeColor = Color.White;
+            btnDos.Location = new Point(0, 240);
+            btnDos.Name = "btnDos";
+            btnDos.Size = new Size(200, 50);
+            btnDos.TabIndex = 1;
+            btnDos.Text = "Dos";
+            btnDos.UseVisualStyleBackColor = false;
+            btnDos.Click += btnDos_Click;
             // 
             // btnUno
             // 
-            this.btnUno.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btnUno.FlatAppearance.BorderSize = 0;
-            this.btnUno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUno.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUno.ForeColor = System.Drawing.Color.White;
-            this.btnUno.Location = new System.Drawing.Point(0, 167);
-            this.btnUno.Name = "btnUno";
-            this.btnUno.Size = new System.Drawing.Size(200, 50);
-            this.btnUno.TabIndex = 0;
-            this.btnUno.Text = "Uno";
-            this.btnUno.UseVisualStyleBackColor = false;
-            this.btnUno.Click += new System.EventHandler(this.btnUno_Click);
+            btnUno.BackColor = Color.FromArgb(128, 128, 255);
+            btnUno.Cursor = Cursors.Hand;
+            btnUno.FlatAppearance.BorderSize = 0;
+            btnUno.FlatStyle = FlatStyle.Flat;
+            btnUno.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnUno.ForeColor = Color.White;
+            btnUno.Location = new Point(0, 167);
+            btnUno.Name = "btnUno";
+            btnUno.Size = new Size(200, 50);
+            btnUno.TabIndex = 0;
+            btnUno.Text = "Uno";
+            btnUno.UseVisualStyleBackColor = false;
+            btnUno.Click += btnUno_Click;
+            // 
+            // panelContenedor
+            // 
+            panelContenedor.BackColor = Color.FromArgb(224, 224, 224);
+            panelContenedor.Dock = DockStyle.Fill;
+            panelContenedor.Location = new Point(200, 0);
+            panelContenedor.Name = "panelContenedor";
+            panelContenedor.Size = new Size(721, 507);
+            panelContenedor.TabIndex = 1;
             // 
             // FrmMenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(921, 507);
-            this.Controls.Add(this.panelContenedor);
-            this.Controls.Add(this.panelMenu);
-            this.MinimumSize = new System.Drawing.Size(937, 546);
-            this.Name = "FrmMenuPrincipal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmMenuPrincipal";
-            this.panelMenu.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(921, 507);
+            Controls.Add(panelContenedor);
+            Controls.Add(panelMenu);
+            MinimumSize = new Size(937, 546);
+            Name = "FrmMenuPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FrmMenuPrincipal";
+            panelMenu.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

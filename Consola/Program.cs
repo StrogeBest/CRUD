@@ -42,5 +42,7 @@ internal class Program
             Console.WriteLine($"Apellido: {pasajero.Apellido}");
             Console.WriteLine($"Dni: {pasajero.Dni}");
         }
+
+        Console.WriteLine($"Dia 1: {pasajeroUno[0]}");
     }
 }
