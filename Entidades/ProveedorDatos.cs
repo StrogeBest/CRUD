@@ -2,38 +2,99 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml.Serialization;
+using System.Xml;
 using System.Text.Json;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace Entidades
 {
-    internal static class ProveedorDatos<T>
+    public static class ProveedorDatos<T>
     {
-        public static void EscribirJson(string ruta, List<T> lista)
+        public static void EscribirJson(string ruta, T obj)
         {
-            if (!File.Exists(ruta))
-            {
-                File.Create(ruta);
-            }
+            JsonSerializerOptions opciones = new JsonSerializerOptions();
+            opciones.WriteIndented = true;
 
             using (StreamWriter sr = new StreamWriter(ruta))
             {
-                string datos = JsonSerializer.Serialize<List<T>>(lista);
-
+                string datos = JsonSerializer.Serialize<T>(obj, opciones);
+                
                 sr.WriteLine(datos);
             }
         }
 
-        public static List<T> LeerJson(string ruta)
+        public static T LeerJson(string ruta)
+        {
+            T obj = default(T)!;
+
+            try
+            {
+                using (StreamReader sr = new StreamReader(ruta))
+                {
+                    string datos = sr.ReadToEnd();
+
+                    try
+                    {
+                        obj = JsonSerializer.Deserialize<T>(datos)!;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            return obj;
+        }
+
+        public static void EscribirXml(string ruta, T obj)
+        {
+            using (XmlTextWriter writer = new XmlTextWriter(ruta, Encoding.UTF8))
+            { 
+                writer.Formatting = Formatting.Indented;
+
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
+
+                xmlSerializer.Serialize(writer, obj);
+            }
+        }
+
+        public static T LeerXml(string ruta)
+        {
+            T obj = default(T)!;
+
+            using (StreamReader sr = new StreamReader(ruta))
+            {
+                XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
+
+                obj = (T)xmlSerializer.Deserialize(sr)!;
+            }
+
+            return obj;
+        }
+
+        public static void EscribirListaJson(string ruta, List<T> lista)
+        {
+            JsonSerializerOptions opciones = new JsonSerializerOptions();
+            opciones.WriteIndented = true;
+
+            using (StreamWriter sr = new StreamWriter(ruta))
+            {
+                string datos = JsonSerializer.Serialize<List<T>>(lista, opciones);
+                
+                sr.WriteLine(datos);
+            }
+        }
+
+        public static List<T> LeerListaJson(string ruta)
         {
             List<T> lista = new List<T>();
 
-            if (!File.Exists(ruta))
-            {
-                File.Create(ruta);
-            }
-            
             try
             {
                 using (StreamReader sr = new StreamReader(ruta))
@@ -59,30 +120,27 @@ namespace Entidades
             return lista;
         }
 
-        public static void EscribirXml(string ruta, List<T> lista)
+        public static void EscribirListaXml(string ruta, List<T> lista)
         {
-            if (!File.Exists(ruta))
-            {
-                File.Create(ruta);
-            }
-
-            using (StreamWriter sw = new StreamWriter(ruta))
+            using (XmlTextWriter writer = new XmlTextWriter(ruta, Encoding.UTF8))
             { 
+                writer.Formatting = Formatting.Indented;
+
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<T>));
 
-                xmlSerializer.Serialize(sw, lista);
+                xmlSerializer.Serialize(writer, lista);
             }
         }
 
-        public static List<T> LeerXml(string ruta)
+        public static List<T> LeerListaXml(string ruta)
         {
             List<T> lista = new List<T>();
 
-            using (StreamReader sr = new StreamReader("alumno.xml"))
+            using (StreamReader sr = new StreamReader(ruta))
             {
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<T>));
 
-                lista = xmlSerializer.Deserialize(sr) as List<T>;
+                lista = (List<T>)xmlSerializer.Deserialize(sr)!;
             }
 
             return lista;
