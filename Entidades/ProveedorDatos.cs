@@ -28,25 +28,11 @@ namespace Entidades
         {
             T obj = default(T)!;
 
-            try
+            using (StreamReader sr = new StreamReader(ruta))
             {
-                using (StreamReader sr = new StreamReader(ruta))
-                {
-                    string datos = sr.ReadToEnd();
+                string datos = sr.ReadToEnd();
 
-                    try
-                    {
-                        obj = JsonSerializer.Deserialize<T>(datos)!;
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+                obj = JsonSerializer.Deserialize<T>(datos)!;
             }
 
             return obj;
@@ -95,26 +81,11 @@ namespace Entidades
         {
             List<T> lista = new List<T>();
 
-            try
+            using (StreamReader sr = new StreamReader(ruta))
             {
-                using (StreamReader sr = new StreamReader(ruta))
-                {
-                    string datos = sr.ReadToEnd();
+                string datos = sr.ReadToEnd();
 
-                    try
-                    {
-                        lista = JsonSerializer.Deserialize<List<T>>(datos)!;
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.Message);
-                    }
-                }
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+                lista = JsonSerializer.Deserialize<List<T>>(datos)!;
             }
 
             return lista;
