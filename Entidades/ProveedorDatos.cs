@@ -68,6 +68,14 @@ namespace Entidades
         {
             JsonSerializerOptions opciones = new JsonSerializerOptions();
             opciones.WriteIndented = true;
+    
+            /*
+            USANDO Newtonsoft.Json
+            
+            string json = JsonConvert.SerializeObject(listaAstro, Formatting.Indented);
+            
+            File.WriteAllText(@"Datos/planetario.json", json);
+            */
 
             using (StreamWriter sr = new StreamWriter(ruta))
             {
